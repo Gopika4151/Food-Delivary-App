@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order - Royal Kitchen</title>
+    <link rel="stylesheet" href="15.order-only.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Royal Kitchen</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="1.index.html">Home</a></li>
+            <li><a href="3.menu.html">Menu</a></li>
+            <li><a href="5.cart.html">Cart</a></li>
+            <li><a href="8.login.html">Login</a></li>
+            <li><a href="10.register.html">Register</a></li>
+            <li><a href="12.contact.html">Contact</a></li>
+            <li><a href="14.order.html">Order</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="order-container">
+
+    <h2>Place Your Order</h2>
+
+    <form onsubmit="alert('Thank you for ordering from Royal Kitchen!'); return false;">
+
+        <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your 10 digit number" required>
+        </div>
+
+        <div class="form-group">
+            <label>Select Your Dish</label>
+            <select required>
+                <option disabled selected>Choose a delicious item</option>
+                <option>Royal Chicken Biryani</option>
+                <option>Cheesy Margherita Pizza</option>
+                <option>Crispy Chicken Burger</option>
+                <option>Traditional South Indian Meals</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Quantity</label>
+            <input type="number" min="1" max="10" value="1">
+        </div>
+
+        <div class="form-group">
+            <label>Delivery Address</label>
+            <textarea rows="3" placeholder="Enter your complete address"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+            Confirm Order
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

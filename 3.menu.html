@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Royal Kitchen</title>
+    <link rel="stylesheet" href="4.menu-only.css">
+</head>
+<body>
+
+    <header class="navbar">
+    <div class="logo">Royal Kitchen</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="1.index.html">Home</a></li>
+            <li><a href="3.menu.html">Menu</a></li>
+            <li><a href="5.cart.html">Cart</a></li>
+            <li><a href="8.login.html">Login</a></li>
+            <li><a href="10.register.html">Register</a></li>
+            <li><a href="12.contact.html">Contact</a></li>
+            <li><a href="14.order.html">Order</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section class="menu-banner">
+        <h1>Explore Our Royal Menu</h1>
+        <p>Freshly prepared signature dishes delivered straight to your location.</p>
+    </section>
+
+    <main class="menu-container">
+
+        <h2 class="category-title">Starters & Snacks</h2>
+        <div class="menu-grid">
+            
+            <div class="food-card">
+                <div class="image-box">
+                    <img  src="cheesy margherita pizza.jpg" alt="Pizza">
+                </div>
+                <div class="food-details">
+                    <div class="food-name">Cheesy Margherita Pizza</div>
+                    <div class="food-desc">Classic pizza loaded with premium mozzarella cheese and fresh basil tomato sauce.</div>
+                    <div class="price-action">
+                        <span class="price">₹299</span>
+                        <button class="add-btn" onclick="addToCart('Cheesy Margherita Pizza', 299,'cheesy margherita pizza.jpg' )">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="image-box">
+                    <img src="crispy chicken burger.jpg" alt="Burger">
+                </div>
+                <div class="food-details">
+                    <div class="food-name">Crispy Chicken Burger</div>
+                    <div class="food-desc">Golden crispy chicken patty with fresh lettuce, crunchy onions, and secret mayo cream.</div>
+                    <div class="price-action">
+                        <span class="price">₹149</span>
+                        <button class="add-btn" onclick="addToCart('Crispy Chicken Burger', 149, 'crispy chicken burger.jpg')">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="category-title">Main Course</h2>
+        <div class="menu-grid">
+
+            <div class="food-card">
+                <div class="image-box">
+                    <img src="royal chicken briyani.jpg" alt="Biryani">
+                </div>
+                <div class="food-details">
+                    <div class="food-name">Royal Chicken Biryani</div>
+                    <div class="food-desc">Fragrant basmati rice slow-cooked with tender, spiced chicken pieces and aromatic herbs.</div>
+                    <div class="price-action">
+                        <span class="price">₹249</span>
+                        <button class="add-btn" onclick="addToCart('Royal Chicken Biryani', 249,'royal chicken briyani.jpg' )">Add To Cart</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+           
+    </main>
+
+    <script src="7.cart.js"></script>
+</body>
+</html>

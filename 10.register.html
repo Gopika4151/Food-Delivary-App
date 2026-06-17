@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Royal Kitchen</title>
+    <link rel="stylesheet" href="11.register-only.css">
+</head>
+<body>
+     <header class="navbar">
+    <div class="logo">Royal Kitchen</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="1.index.html">Home</a></li>
+            <li><a href="3.menu.html">Menu</a></li>
+            <li><a href="5.cart.html">Cart</a></li>
+            <li><a href="8.login.html">Login</a></li>
+            <li><a href="10.register.html">Register</a></li>
+            <li><a href="12.contact.html">Contact</a></li>
+            <li><a href="14.order.html">Order</a></li>
+        </ul>
+    </nav>
+</header>
+    <div class="register-wrapper">
+        <div class="register-box">
+            <div class="register-header">
+                <h2>Royal Kitchen</h2>
+                <p>Create your account to start ordering delicious food</p>
+            </div>
+
+            <form action="#" method="POST" onsubmit="alert('Registration Successful! Please Login.'); window.location.href='4.login.html'; return false;">
+                
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password" required>
+                </div>
+
+                <div class="terms-option">
+                    <label class="checkbox-container">
+                        <input type="checkbox" required> I agree to the Terms & Conditions
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+
+            <div class="register-footer">
+                <p>Already have an account? <a href="8.login.html">Login Here</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

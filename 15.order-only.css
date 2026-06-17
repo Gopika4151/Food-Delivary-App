@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url('bg.jpg');
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+    color:white;
+}
+
+.navbar{
+    background:#111827;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:#ff8c00;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:500;
+}
+
+.nav-links a:hover{
+    color:#ff8c00;
+}
+
+.order-container{
+    width:100%;
+    max-width:500px;
+    margin:50px auto;
+    background:rgba(0,0,0,0.8);
+    padding:30px;
+    border-radius:15px;
+}
+
+h2{
+    text-align:center;
+    color:#ff8c00;
+    margin-bottom:20px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #555;
+    background:#1e293b;
+    color:white;
+    border-radius:5px;
+}
+
+.submit-btn{
+    width:100%;
+    background:#ff8c00;
+    color:white;
+    border:none;
+    padding:12px;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.submit-btn:hover{
+    background:#e07b00;
+}

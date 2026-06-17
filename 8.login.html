@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Royal Kitchen</title>
+    <link rel="stylesheet" href="9.login-only.css">
+</head>
+<body>
+     <header class="navbar">
+    <div class="logo">Royal Kitchen</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="1.index.html">Home</a></li>
+            <li><a href="3.menu.html">Menu</a></li>
+            <li><a href="5.cart.html">Cart</a></li>
+            <li><a href="8.login.html">Login</a></li>
+            <li><a href="10.register.html">Register</a></li>
+            <li><a href="12.contact.html">Contact</a></li>
+            <li><a href="14.order.html">Order</a></li>
+        </ul>
+    </nav>
+</header>
+    <div class="login-wrapper">
+        <div class="login-box">
+            <div class="login-header">
+                <h2>Royal Kitchen</h2>
+                <p>Welcome back! Please login to your account</p>
+            </div>
+
+            <form action="#" method="POST" onsubmit="alert('Login Successful!'); return false;">
+                
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="extra-options">
+                    <label class="remember-box">
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#" class="forgot-link">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+            <div class="login-footer">
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
